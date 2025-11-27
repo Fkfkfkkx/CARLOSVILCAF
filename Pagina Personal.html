@@ -1,101 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mi presentación personal</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    /* Pequeños ajustes visuales */
+    header { background: #0d6efd; color: white; }
+    .skill-icon { font-size: 2.5rem; }
+    footer { background: #212529; color: #fff; }
+  </style>
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Mi Web</a>
-    <ul id="menu">
-         <li><a href="html.html">INICIO</a></li>
-        <li><a href="mi primera pagina web.html">Primpera pagina web</a></li>
-        <li><a href="mi segunda pagina web.html">segunda pagina web</a></li>
-        <li><a href="mi TERCERA pagina web.html">tercera pagina web</a></li>
-        <li><a href="mi CUARTA pagina web.html">cuarta pagina web</a></li>
-        <li><a href="mi QUINTA pagina web.html">quinta pagina web</a></li>
-        <li><a href="Pagina Personal.html">Pagina Personal</a></li>
-            <li><a>ENTREGABLE</a></li>
-    </ul>
-  </div>
-</nav>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Mi Web</a>
 
-<!-- HEADER -->
-<header class="bg-primary text-white text-center py-5">
-  <h1>¡Hola! Soy Juan Pérez</h1>
-  <p class="lead">Estudiante de Ingeniería de Software | Desarrollador Web Junior</p>
-</header>
+      <!-- Botón para colapsar en móvil -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<!-- SOBRE MÍ -->
-<section class="container my-5">
-  <div class="row">
-    <div class="col-md-4">
-      <img src="images/logo2.jpg" class="img-fluid rounded-circle" alt="Foto">
-    </div>
-    <div class="col-md-8">
-      <h2>Sobre mí</h2>
-      <p>Soy un apasionado de la tecnología y me encanta crear páginas web interactivas. Tengo conocimientos en HTML, CSS y JavaScript. Me interesa seguir aprendiendo sobre frameworks modernos y desarrollo backend.</p>
-    </div>
-  </div>
-</section>
-
-<!-- HABILIDADES -->
-<section class="bg-light py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Habilidades</h2>
-    <div class="row text-center">
-      <div class="col-md-4">
-        <i class="bi bi-filetype-pyh fs-1 text-primary"></i>
-        <h5>Python</h5>
-      </div>
-      <div class="col-md-4">
-        <i class="bi bi-javascript fs-1 text-success"></i>
-        <h5>JavaScript</h5>
-      </div>
-      <div class="col-md-4">
-        <i class="bi bi-git fs-1 text-danger"></i>
-        <h5>Git & GitHub</h5>
-      </div>
-      <div class="col-md-4">
-        <i class="bi bi-android fs-1 text-success"></i>
-        <h5>Desarrollo en Android</h5>
-      </div>
-       <div class="col-md-4">
-        <i class="bi bi-code-slash fs-1 text-primary"></i>
-        <h5>HTML & CSS</h5>
-      </div>
-      <div class="col-md-4">
-        <i class="bi bi-filetype-sql fs-1 text-success"></i>
-        <h5>SQL</h5>
-      </div>
-      <div class="col-md-4">
-        <i class="bibi-filetype-java fs-1 text-danger"></i>
-        <h5>JAVA</h5>
-      </div>
-      <div class="col-md-4">
-        <i class="bi bi-laptop fs-1 text-success"></i>
-        <h5>JavaScript</h5>
-      </div>
-      <div class="col-md-4">
-        <i class="bi bi-git fs-1 text-danger"></i>
-        <h5>Git & GitHub</h5>
+      <!-- Menú colapsable -->
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="html.html">INICIO</a></li>
+          <li class="nav-item"><a class="nav-link" href="mi primera pagina web.html">Primera página web</a></li>
+          <li class="nav-item"><a class="nav-link" href="mi segunda pagina web.html">Segunda página web</a></li>
+          <li class="nav-item"><a class="nav-link" href="mi TERCERA pagina web.html">Tercera página web</a></li>
+          <li class="nav-item"><a class="nav-link" href="mi CUARTA pagina web.html">Cuarta página web</a></li>
+          <li class="nav-item"><a class="nav-link" href="mi QUINTA pagina web.html">Quinta página web</a></li>
+          <li class="nav-item"><a class="nav-link" href="Pagina Personal.html">Página Personal</a></li>
+          <li class="nav-item"><a class="nav-link disabled" tabindex="-1" aria-disabled="true">ENTREGABLE</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- PIE DE PÁGINA -->
-<footer class="bg-dark text-white text-center py-3">
-  <p>&copy; 2025 Juan Pérez. Todos los derechos reservados.</p>
-</footer>
+  <!-- HEADER -->
+  <header class="text-center py-5">
+    <div class="container">
+      <h1 class="display-5">¡Hola! Soy Juan Pérez</h1>
+      <p class="lead">Estudiante de Ingeniería de Software | Desarrollador Web Junior</p>
+    </div>
+  </header>
 
-<!-- Iconos (Bootstrap Icons CDN opcional) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- SOBRE MÍ -->
+  <section class="container my-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-4 text-center">
+        <!-- Asegúrate de que images/logo2.jpg exista -->
+        <img src="images/logo2.jpg" class="img-fluid rounded-circle" alt="Foto de Juan Pérez" style="max-width:250px;">
+      </div>
+      <div class="col-md-8">
+        <h2>Sobre mí</h2>
+        <p>Soy un apasionado de la tecnología y me encanta crear páginas web interactivas. Tengo conocimientos en HTML, CSS y JavaScript. Me interesa seguir aprendiendo sobre frameworks modernos y desarrollo backend.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- HABILIDADES -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Habilidades</h2>
+
+      <div class="row text-center g-3">
+        <div class="col-6 col-md-4">
+          <i class="bi bi-file-earmark-code skill-icon"></i>
+          <h5 class="mt-2">HTML & CSS</h5>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <i class="bi bi-filetype-js skill-icon"></i>
+          <h5 class="mt-2">JavaScript</h5>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <i class="bi bi-filetype-py skill-icon"></i>
+          <h5 class="mt-2">Python</h5>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <i class="bi bi-git skill-icon"></i>
+          <h5 class="mt-2">Git & GitHub</h5>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <i class="bi bi-phone skill-icon"></i>
+          <h5 class="mt-2">Desarrollo Android</h5>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <i class="bi bi-database skill-icon"></i>
+          <h5 class="mt-2">SQL</h5>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <i class="bi bi-laptop skill-icon"></i>
+          <h5 class="mt-2">Frontend</h5>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <i class="bi bi-code-slash skill-icon"></i>
+          <h5 class="mt-2">Programación</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="py-3 text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Juan Pérez. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (bundle incluye Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

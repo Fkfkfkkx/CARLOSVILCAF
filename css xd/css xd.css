@@ -5,6 +5,10 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
+img{
+    background-color: transparent;
+}
+
 body {
     background: linear-gradient(135deg, #d4d7ff, #f0d9ff);
     color: #333;

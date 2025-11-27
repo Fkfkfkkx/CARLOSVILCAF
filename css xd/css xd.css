@@ -12,11 +12,11 @@ body {
     padding: 20px;
 }
 
-/* HEADER (ya NO es blanco) */
+
 header {
     text-align: center;
     padding: 20px;
-    background-color: #e8eaf6; /* cambiado del blanco */
+    background-color: #e8eaf6; 
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(26, 35, 126, 0.25);
 }
@@ -32,7 +32,7 @@ header img:hover {
     transform: scale(1.05);
 }
 
-/* NAV */
+
 nav {
     background-color: #1a237e;
     padding: 10px;
@@ -65,7 +65,7 @@ nav ul li a:hover {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* SECTION */
+
 section {
     display: flex;
     flex-direction: row;
@@ -73,10 +73,10 @@ section {
     margin-bottom: 20px;
 }
 
-/* ARTICLE (ya NO es blanco) */
+
 article {
     flex: 2;
-    background-color: #f0e9ff; /* cambiado del blanco */
+    background-color: #f0e9ff; 
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 7px rgba(57, 73, 171, 0.25);
@@ -108,20 +108,20 @@ article table td {
     padding: 8px;
 }
 
-/* ASIDE (ya NO es blanco) */
+
 aside {
     flex: 1;
-    background-color: #e0d7ff; /* antes #e8eaf6 */
+    background-color: #e0d7ff; 
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 7px rgba(26, 35, 126, 0.25);
 }
 
-/* FOOTER (combinado, no blanco) */
+
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #4a4fc1; /* antes #3949ab */
+    background-color: #4a4fc1; 
     color: white;
     border-radius: 8px;
     margin-top: 20px;

@@ -6,13 +6,13 @@
 }
 
 body {
-    background-color: #f3f3f7;
+    background: linear-gradient(135deg, #d4d7ff, #f0d9ff);
     color: #333;
     line-height: 1.6;
     padding: 20px;
 }
 
-/* HEADER */
+
 header {
     text-align: center;
     padding: 20px;
@@ -32,7 +32,7 @@ header img:hover {
     transform: scale(1.05);
 }
 
-/* NAV */
+
 nav {
     background-color: #1a237e;
     padding: 10px;
@@ -61,7 +61,7 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-/* CONTENIDO */
+
 #entregable {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -94,7 +94,7 @@ article dl {
     margin: 18px;
 }
 
-/* TABLAS */
+
 article table {
     background-color: #f5f0ff;
     border: 2px solid #7e57c2;
@@ -108,7 +108,7 @@ article table td {
     padding: 8px;
 }
 
-/* ASIDE */
+
 aside {
     flex: 1;
     background-color: #e8eaf6;
@@ -117,7 +117,7 @@ aside {
     box-shadow: 0 2px 7px rgba(26, 35, 126, 0.25);
 }
 
-/* FOOTER */
+
 footer {
     text-align: center;
     padding: 15px;

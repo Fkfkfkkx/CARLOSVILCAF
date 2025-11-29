@@ -38,39 +38,35 @@ header img:hover {
 
 
 nav {
-    background-color: #1a237e;
-    padding: 12px 0;
+    background: #1a237e;
+    padding: 10px;
     margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    border-radius: 6px;
+    text-align: center;
 }
-
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 28px;
     padding: 0;
     margin: 0;
+    display: inline-flex;
+    gap: 12px;
 }
-
 
 nav ul li a {
-    color: white;
-    background-color: #3949ab;
+    display: block;
+    padding: 8px 14px;
     text-decoration: none;
-    padding: 10px 18px;
-    border-radius: 6px;
-    font-weight: 500;
-    transition: 0.3s ease;
+    background: #3949ab;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
 }
 
-
 nav ul li a:hover {
-    background-color: #5c6bc0;
-    transform: translateY(-2px);
+    background: #7e57c2;
+    transform: scale(1.05);
 }
 
 #entregable {

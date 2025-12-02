@@ -1,35 +1,35 @@
-// --- 6 alerts  ---
-function alert1(){ alert("Hola Gosha! (1)"); }
-function alert2(){ alert("Este es otro mensaje (2)"); }
-function alert3(){ alert("Mensaje número 3"); }
-function alert4(){ alert("Mensaje especial (4)"); }
-function alert5(){ alert("Mensaje emergente (5)"); }
-function alert6(){ alert("Último mensaje (6)"); }
+// 6 ALERTAS
+function alert1() { alert("Este es el mensaje de alerta 1"); }
+function alert2() { alert("Este es el mensaje de alerta 2"); }
+function alert3() { alert("Este es el mensaje de alerta 3"); }
+function alert4() { alert("Este es el mensaje de alerta 4"); }
+function alert5() { alert("Este es el mensaje de alerta 5"); }
+function alert6() { alert("Este es el mensaje de alerta 6"); }
 
-// --- 4 CAMBIOS pa la pagina ---
-function fondoNegro(){
-    document.body.style.background = "black";
-    document.body.style.color = "white";
+// 4 QUE MODIFICAN LA PÁGINA
+function cambiarFondo() {
+    document.body.style.background = 
+    document.body.style.background === "black" ? "#f4f4f4" : "black";
 }
 
-function fondoBlanco(){
-    document.body.style.background = "white";
-    document.body.style.color = "black";
+function cambiarTexto() {
+    document.body.style.color = 
+    document.body.style.color === "white" ? "black" : "white";
 }
 
-function textoRojo(){
-    document.body.style.color = "red";
+function agrandar() {
+    document.body.style.fontSize = "22px";
 }
 
-function agrandarTexto(){
-    document.body.style.fontSize = "20px";
+function achicar() {
+    document.body.style.fontSize = "16px";
 }
 
-// -- pa cambiar texto ---
-function cambiarTitulo(){
-    document.getElementById("titulo").textContent = "Título cambiado por JavaScript";
+// 2 QUE CAMBIAN TEXTO
+function cambiarTitulo() {
+    document.querySelector("h1").innerText = "Título cambiado con JavaScript";
 }
 
-function cambiarSubtitulo(){
-    document.getElementById("subtitulo").textContent = "Subtítulo actualizado automáticamente";
+function cambiarSubtitulo() {
+    document.querySelector("h3").innerText = "Subtítulo cambiado con JavaScript";
 }

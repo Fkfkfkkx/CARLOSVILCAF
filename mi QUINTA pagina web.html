@@ -11,28 +11,101 @@
             <h1>MI QUINTA PAGINA WEB</h1>
             <H2> MI NOMBRES ES GOSHA KAR</H2>
         </HEADER>
-    <NAV>
-        <ul id="menu">
-            <li><a href="html.html">INICIO</a></li>
-            <li><a href="mi primera pagina web.html">Primera pagina web</a></li>
-            <li><a href="mi segunda pagina web.html">Segunda pagina web</a></li>
-            <li><a href="mi TERCERA pagina web.html">Tercera pagina web</a></li>
-            <li><a href="mi CUARTA pagina web.html">Cuarta pagina web</a></li>
-            <li><a href="mi QUINTA pagina web.html">Quinta pagina web</a></li>
-            <li><a href="Pagina Personal.html">Pagina Personal</a></li>
-            <li><a href="entregable.html">ENTREGABLE</a></li>
-        </ul>
-    </NAV>
+
+        <NAV>
+            <ul id="menu">
+                <li><a href="html.html">INICIO</a></li>
+                <li><a href="mi primera pagina web.html">Primera pagina web</a></li>
+                <li><a href="mi segunda pagina web.html">Segunda pagina web</a></li>
+                <li><a href="mi TERCERA pagina web.html">Tercera pagina web</a></li>
+                <li><a href="mi CUARTA pagina web.html">Cuarta pagina web</a></li>
+                <li><a href="mi QUINTA pagina web.html">Quinta pagina web</a></li>
+                <li><a href="Pagina Personal.html">Pagina Personal</a></li>
+                <li><a href="entregable.html">ENTREGABLE</a></li>
+            </ul>
+        </NAV>
+
         <section>
             <article>
-                
+
+                <h2>Formulario de Registro Completo</h2>
+
+                <form action="#" method="POST">
+
+                    <h3>Datos Personales</h3>
+
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="apellido">Apellido:</label><br>
+                    <input type="text" id="apellido" name="apellido" required><br><br>
+
+                    <label for="dni">DNI / Identificación:</label><br>
+                    <input type="text" id="dni" name="dni"><br><br>
+
+                    <label for="nacimiento">Fecha de nacimiento:</label><br>
+                    <input type="date" id="nacimiento" name="nacimiento"><br><br>
+
+
+                    <h3>Datos de Contacto</h3>
+
+                    <label for="correo">Correo electrónico:</label><br>
+                    <input type="email" id="correo" name="correo" required><br><br>
+
+                    <label for="telefono">Teléfono:</label><br>
+                    <input type="tel" id="telefono" name="telefono"><br><br>
+
+                    <label for="direccion">Dirección:</label><br>
+                    <input type="text" id="direccion" name="direccion"><br><br>
+
+
+                    <h3>Datos de Cuenta</h3>
+
+                    <label for="usuario">Usuario:</label><br>
+                    <input type="text" id="usuario" name="usuario" required><br><br>
+
+                    <label for="password">Contraseña:</label><br>
+                    <input type="password" id="password" name="password" required><br><br>
+
+                    <label for="password2">Repetir Contraseña:</label><br>
+                    <input type="password" id="password2" name="password2" required><br><br>
+
+
+                    <h3>Preferencias</h3>
+
+                    <label for="pais">País:</label><br>
+                    <select id="pais" name="pais">
+                        <option value="">Seleccione...</option>
+                        <option value="peru">Perú</option>
+                        <option value="mexico">México</option>
+                        <option value="chile">Chile</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="colombia">Colombia</option>
+                    </select><br><br>
+
+                    <label>Género:</label><br>
+                    <input type="radio" name="genero" value="masculino"> Masculino<br>
+                    <input type="radio" name="genero" value="femenino"> Femenino<br>
+                    <input type="radio" name="genero" value="otro"> Otro<br><br>
+
+                    <label>Intereses:</label><br>
+                    <input type="checkbox" name="intereses" value="tecnologia"> Tecnología<br>
+                    <input type="checkbox" name="intereses" value="deportes"> Deportes<br>
+                    <input type="checkbox" name="intereses" value="musica"> Música<br>
+                    <input type="checkbox" name="intereses" value="cine"> Cine<br><br>
+
+                    <button type="submit">Crear cuenta</button>
+
+                </form>
+
             </article>
         </section>
-    <footer>
-        <h3>Enlaces</h3>
-        <a href="https://github.com/Fkfkfkkx/CARLOSVILCAF" target="_blank">Repositorio de Carlos VF</a>
-        <a href="https://fkfkfkkx.github.io/CARLOSVILCAF/" target="_blank">Página del Carlos</a>
-        <p>2025 - Todo los Derechos Reservados</p>
-    </footer>
+
+        <footer>
+            <h3>Enlaces</h3>
+            <a href="https://github.com/Fkfkfkkx/CARLOSVILCAF" target="_blank">Repositorio de Carlos VF</a>
+            <a href="https://fkfkfkkx.github.io/CARLOSVILCAF/" target="_blank">Página del Carlos</a>
+            <p>2025 - Todo los Derechos Reservados</p>
+        </footer>
     </body>
 </html>

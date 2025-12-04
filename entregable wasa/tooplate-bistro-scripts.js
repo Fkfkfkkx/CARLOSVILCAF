@@ -10,11 +10,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       e.preventDefault();
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
-         
+
          document.querySelectorAll('.nav-links a').forEach(link => {
             link.classList.remove('active');
          });
-         
+
          this.classList.add('active');
 
          target.scrollIntoView({
@@ -55,7 +55,6 @@ function createDiagonalGrid() {
    const grid = document.querySelector('.diagonal-grid');
    if (!grid) return;
 
-   
    const blocks = [{
          width: 80,
          bottom: -400,
@@ -117,7 +116,6 @@ function createStaticDecoration() {
    const decoration = document.querySelector('.static-decoration');
    if (!decoration) return;
 
-   
    const staticBlocks = [{
          size: 85,
          top: '20px',
@@ -190,7 +188,6 @@ function createBottomRightDecoration() {
    const decoration = document.querySelector('.bottom-right-decoration');
    if (!decoration) return;
 
-   
    const redBlocks = [{
          size: 65,
          bottom: '20px',
@@ -243,73 +240,73 @@ function createBottomRightDecoration() {
 
 const ingredientsData = {
    'truffle-risotto': {
-      title: 'Truffle Risotto',
+      title: 'Risotto de Trufa',
       ingredients: [{
-            name: 'Arborio Rice',
+            name: 'Arroz Arborio',
             allergen: false
          },
          {
-            name: 'Black Truffle',
+            name: 'Trufa Negra',
             allergen: false
          },
          {
-            name: 'Parmesan Cheese',
+            name: 'Queso Parmesano',
             allergen: true
          },
          {
-            name: 'Vegetable Stock',
+            name: 'Caldo de Vegetales',
             allergen: false
          },
          {
-            name: 'White Wine',
+            name: 'Vino Blanco',
             allergen: false
          },
          {
-            name: 'Butter',
+            name: 'Mantequilla',
             allergen: true
          },
          {
-            name: 'Fresh Herbs',
+            name: 'Hierbas Frescas',
             allergen: false
          },
          {
-            name: 'Shallots',
+            name: 'Chalotes',
             allergen: false
          }
       ]
    },
    'grilled-salmon': {
-      title: 'Grilled Salmon',
+      title: 'Salmón a la Parrilla',
       ingredients: [{
-            name: 'Atlantic Salmon',
+            name: 'Salmón del Atlántico',
             allergen: true
          },
          {
-            name: 'Lemon',
+            name: 'Limón',
             allergen: false
          },
          {
-            name: 'Butter',
+            name: 'Mantequilla',
             allergen: true
          },
          {
-            name: 'Seasonal Vegetables',
+            name: 'Vegetales de Estación',
             allergen: false
          },
          {
-            name: 'Olive Oil',
+            name: 'Aceite de Oliva',
             allergen: false
          },
          {
-            name: 'Fresh Dill',
+            name: 'Eneldo Fresco',
             allergen: false
          },
          {
-            name: 'Sea Salt',
+            name: 'Sal Marina',
             allergen: false
          },
          {
-            name: 'Black Pepper',
+            name: 'Pimienta Negra',
             allergen: false
          }
       ]
@@ -317,15 +314,15 @@ const ingredientsData = {
    'beef-wellington': {
       title: 'Beef Wellington',
       ingredients: [{
-            name: 'Beef Tenderloin',
+            name: 'Lomo de Res',
             allergen: false
          },
          {
-            name: 'Puff Pastry',
+            name: 'Hojaldre',
             allergen: true
          },
          {
-            name: 'Mushroom Duxelles',
+            name: 'Duxelles de Champiñones',
             allergen: false
          },
          {
@@ -333,127 +330,127 @@ const ingredientsData = {
             allergen: false
          },
          {
-            name: 'Egg Wash',
+            name: 'Huevo Batido',
             allergen: true
          },
          {
-            name: 'Fresh Thyme',
+            name: 'Tomillo Fresco',
             allergen: false
          },
          {
-            name: 'Dijon Mustard',
+            name: 'Mostaza Dijon',
             allergen: false
          },
          {
-            name: 'Red Wine Jus',
+            name: 'Jugo de Vino Tinto',
             allergen: false
          }
       ]
    },
    'lobster-thermidor': {
-      title: 'Lobster Thermidor',
+      title: 'Langosta Thermidor',
       ingredients: [{
-            name: 'Fresh Lobster',
+            name: 'Langosta Fresca',
             allergen: true
          },
          {
-            name: 'Cognac',
+            name: 'Coñac',
             allergen: false
          },
          {
-            name: 'Heavy Cream',
+            name: 'Crema de Leche',
             allergen: true
          },
          {
-            name: 'Gruyere Cheese',
+            name: 'Queso Gruyere',
             allergen: true
          },
          {
-            name: 'Butter',
+            name: 'Mantequilla',
             allergen: true
          },
          {
-            name: 'Egg Yolks',
+            name: 'Yemas de Huevo',
             allergen: true
          },
          {
-            name: 'Fresh Tarragon',
+            name: 'Estragón Fresco',
             allergen: false
          },
          {
-            name: 'White Pepper',
+            name: 'Pimienta Blanca',
             allergen: false
          }
       ]
    },
    'duck-confit': {
-      title: 'Duck Confit',
+      title: 'Confit de Pato',
       ingredients: [{
-            name: 'Duck Leg',
+            name: 'Pierna de Pato',
             allergen: false
          },
          {
-            name: 'Duck Fat',
+            name: 'Grasa de Pato',
             allergen: false
          },
          {
-            name: 'Garlic Potatoes',
+            name: 'Papas al Ajo',
             allergen: false
          },
          {
-            name: 'Fresh Cherries',
+            name: 'Cerezas Frescas',
             allergen: false
          },
          {
-            name: 'Red Wine Vinegar',
+            name: 'Vinagre de Vino Tinto',
             allergen: false
          },
          {
-            name: 'Fresh Thyme',
+            name: 'Tomillo Fresco',
             allergen: false
          },
          {
-            name: 'Bay Leaves',
+            name: 'Hojas de Laurel',
             allergen: false
          },
          {
-            name: 'Coarse Salt',
+            name: 'Sal Gruesa',
             allergen: false
          }
       ]
    },
    'chocolate-souffle': {
-      title: 'Chocolate Soufflé',
+      title: 'Soufflé de Chocolate',
       ingredients: [{
-            name: 'Dark Chocolate',
+            name: 'Chocolate Oscuro',
             allergen: false
          },
          {
-            name: 'Eggs',
+            name: 'Huevos',
             allergen: true
          },
          {
-            name: 'Sugar',
+            name: 'Azúcar',
             allergen: false
          },
          {
-            name: 'Butter',
+            name: 'Mantequilla',
             allergen: true
          },
          {
-            name: 'Vanilla Ice Cream',
+            name: 'Helado de Vainilla',
             allergen: true
          },
          {
-            name: 'Mixed Berries',
+            name: 'Frutas del Bosque',
             allergen: false
          },
          {
-            name: 'Heavy Cream',
+            name: 'Crema de Leche',
             allergen: true
          },
          {
-            name: 'Vanilla Extract',
+            name: 'Extracto de Vainilla',
             allergen: false
          }
       ]
@@ -475,7 +472,7 @@ function showIngredients(dishId) {
          const li = document.createElement('li');
          li.innerHTML = `
                         <span>${ingredient.name}</span>
-                        ${ingredient.allergen ? '<span class="allergen">Allergen</span>' : ''}
+                        ${ingredient.allergen ? '<span class="allergen">Alérgeno</span>' : ''}
                     `;
          list.appendChild(li);
       });
@@ -512,10 +509,8 @@ function handleReservation(e) {
       special: formData.get('special')
    };
 
-   
-   alert(`Thank you, ${reservation.name}! Your reservation for ${reservation.guests} guests on ${reservation.date} at ${reservation.time} has been confirmed. We will send a confirmation email to ${reservation.email}.`);
+   alert(`¡Gracias, ${reservation.name}! Tu reserva para ${reservation.guests} personas el ${reservation.date} a las ${reservation.time} ha sido confirmada. Te enviaremos un correo de confirmación a ${reservation.email}.`);
 
-   
    e.target.reset();
 }
 
@@ -530,25 +525,22 @@ window.addEventListener('scroll', () => {
       nav.style.boxShadow = 'none';
    }
 
-   
    updateActiveNavItem();
 });
 
 
 document.addEventListener('DOMContentLoaded', () => {
-   
+
    const dateInput = document.getElementById('date');
    if (dateInput) {
       const today = new Date().toISOString().split('T')[0];
       dateInput.setAttribute('min', today);
    }
 
-   
    createDiagonalGrid();
    createStaticDecoration();
    createBottomRightDecoration();
 
-   
    const homeLink = document.querySelector('.nav-links a[href="#home"]');
    if (homeLink) {
       homeLink.classList.add('active');

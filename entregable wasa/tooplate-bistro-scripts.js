@@ -1,10 +1,3 @@
-// JavaScript Document
-
-// Tooplate 2148 Bistro Elegance
-
-// https://www.tooplate.com/view/2148-bistro-elegance
-
-// Mobile menu toggle
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
@@ -12,17 +5,16 @@ menuToggle.addEventListener('click', () => {
    navLinks.classList.toggle('active');
 });
 
-// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
    anchor.addEventListener('click', function (e) {
       e.preventDefault();
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
-         // Remove active class from all nav links
+         
          document.querySelectorAll('.nav-links a').forEach(link => {
             link.classList.remove('active');
          });
-         // Add active class to clicked link
+         
          this.classList.add('active');
 
          target.scrollIntoView({
@@ -34,7 +26,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
    });
 });
 
-// Update active nav item on scroll
+
 function updateActiveNavItem() {
    const sections = document.querySelectorAll('section[id]');
    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
@@ -58,12 +50,12 @@ function updateActiveNavItem() {
    });
 }
 
-// Generate diagonal elements for entire home area
+
 function createDiagonalGrid() {
    const grid = document.querySelector('.diagonal-grid');
    if (!grid) return;
 
-   // Create 6 solid light grey diagonal blocks in bottom-left corner, moved down and spread out
+   
    const blocks = [{
          width: 80,
          bottom: -400,
@@ -120,12 +112,12 @@ function createDiagonalGrid() {
    });
 }
 
-// Create static decoration blocks
+
 function createStaticDecoration() {
    const decoration = document.querySelector('.static-decoration');
    if (!decoration) return;
 
-   // 9 blocks for top-right corner decoration (6 outline, 3 filled) with sizes from 40px to 120px
+   
    const staticBlocks = [{
          size: 85,
          top: '20px',
@@ -193,12 +185,12 @@ function createStaticDecoration() {
    });
 }
 
-// Create red decoration blocks for bottom right
+
 function createBottomRightDecoration() {
    const decoration = document.querySelector('.bottom-right-decoration');
    if (!decoration) return;
 
-   // 6 blocks for bottom-right corner (4 filled red + 2 outline)
+   
    const redBlocks = [{
          size: 65,
          bottom: '20px',
@@ -248,7 +240,7 @@ function createBottomRightDecoration() {
    });
 }
 
-// Ingredients data
+
 const ingredientsData = {
    'truffle-risotto': {
       title: 'Truffle Risotto',
@@ -468,7 +460,7 @@ const ingredientsData = {
    }
 };
 
-// Show ingredients modal
+
 function showIngredients(dishId) {
    const modal = document.getElementById('ingredientsModal');
    const title = document.getElementById('modalTitle');
@@ -492,12 +484,12 @@ function showIngredients(dishId) {
    }
 }
 
-// Close modal
+
 function closeModal() {
    document.getElementById('ingredientsModal').style.display = 'none';
 }
 
-// Close modal when clicking outside
+
 window.addEventListener('click', (e) => {
    const modal = document.getElementById('ingredientsModal');
    if (e.target === modal) {
@@ -505,7 +497,7 @@ window.addEventListener('click', (e) => {
    }
 });
 
-// Handle reservation form
+
 function handleReservation(e) {
    e.preventDefault();
 
@@ -520,14 +512,14 @@ function handleReservation(e) {
       special: formData.get('special')
    };
 
-   // Simulate form submission
+   
    alert(`Thank you, ${reservation.name}! Your reservation for ${reservation.guests} guests on ${reservation.date} at ${reservation.time} has been confirmed. We will send a confirmation email to ${reservation.email}.`);
 
-   // Reset form
+   
    e.target.reset();
 }
 
-// Navbar scroll effect
+
 window.addEventListener('scroll', () => {
    const nav = document.querySelector('nav');
    if (window.scrollY > 100) {
@@ -538,25 +530,25 @@ window.addEventListener('scroll', () => {
       nav.style.boxShadow = 'none';
    }
 
-   // Update active nav item
+   
    updateActiveNavItem();
 });
 
-// Initialize all elements when page loads
+
 document.addEventListener('DOMContentLoaded', () => {
-   // Set minimum date to today
+   
    const dateInput = document.getElementById('date');
    if (dateInput) {
       const today = new Date().toISOString().split('T')[0];
       dateInput.setAttribute('min', today);
    }
 
-   // Create all decorative elements
+   
    createDiagonalGrid();
    createStaticDecoration();
    createBottomRightDecoration();
 
-   // Set initial active nav item to Home
+   
    const homeLink = document.querySelector('.nav-links a[href="#home"]');
    if (homeLink) {
       homeLink.classList.add('active');

@@ -12,7 +12,7 @@ body {
 	overflow-x: hidden;
 }
 
-/* Navigation */
+/* la navegacion  */
 nav {
 	position: fixed;
 	top: 0;
@@ -93,7 +93,7 @@ nav {
 	transition: 0.3s;
 }
 
-/* Hero Section with Diagonal Grid */
+/* pa la etiqueta hero */
 .hero {
 	height: 100vh;
 	position: relative;
@@ -641,7 +641,7 @@ footer {
 	color: #555;
 }
 
-/* Mobile Responsive */
+/* como se ve en el celar */
 @media (max-width: 768px) {
 	.nav-links {
 		position: fixed;

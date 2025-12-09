@@ -1,239 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos Aurea Dining - Experiencia de Alta Cocina</title>
-    <link rel="stylesheet" href="tooplate-bistro-elegance.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EKO MARKET</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- navegacion en el menu -->
+
+    <!-- Navegación desde el eko market -->
     <nav>
         <div class="nav-container">
-            <a href="#home" class="logo">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="">
-                    
-                    <circle cx="20" cy="20" r="18" stroke="#e74c3c" stroke-width="2" fill="none"/>
-                    <circle cx="20" cy="20" r="14" stroke="#e74c3c" stroke-width="1" fill="none" opacity="0.5"/>
-                    
-                    
-                    <path d="M10 12 L10 20 M8 12 L8 15 M12 12 L12 15 M8 12 L12 12" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    
-                    
-                    <path d="M30 12 L30 20 M28 12 Q28 14 30 14" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                    
-                    
-                    <ellipse cx="20" cy="26" rx="6" ry="3" fill="#e74c3c" opacity="0.2"/>
-                    <path d="M14 26 C14 24 16 22 20 22 C24 22 26 24 26 26" stroke="#e74c3c" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-                    <circle cx="17" cy="24" r="1" fill="#e74c3c" opacity="0.6"/>
-                    <circle cx="20" cy="23" r="1" fill="#e74c3c" opacity="0.6"/>
-                    <circle cx="23" cy="24" r="1" fill="#e74c3c" opacity="0.6"/>
+            <a href="#" class="logo">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z" stroke="#e74c3c" stroke-width="2"/>
                 </svg>
-                <span>Carlos Aurea Dining</span>
+                EKO MARKET
             </a>
+
             <ul class="nav-links">
-                <li><a href="#home" class="active">Inicio</a></li>
-                <li><a href="#menu">Menú</a></li>
-                <li><a href="#reservation">Reservas</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#promos">Promos</a></li>
+                <li><a href="#pedido">Pedidos</a></li>
             </ul>
+
             <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </div>
         </div>
     </nav>
 
-    
-    <section id="home" class="hero">
+    <!-- Hero -->
+    <header class="hero" id="inicio">
         <div class="diagonal-grid"></div>
-        <div class="static-decoration"></div>
-        <div class="bottom-right-decoration"></div>
         <div class="hero-content">
-            <h1>Bienvenido a Carlos Aurea Dining</h1>
+            <h1>EKO MARKET</h1>
             <p>
-                <span class="text-option">Experimenta excelencia culinaria en un ambiente de sofisticación refinada</span>
-                <span class="text-option">Descubre sabores exquisitos creados con pasión y precisión</span>
-                <span class="text-option">Donde la alta cocina se encuentra con momentos inolvidables</span>
+                <span class="text-option">Productos 100% naturales</span>
+                <span class="text-option">Alimentos frescos y orgánicos</span>
+                <span class="text-option">Calidad ecológica garantizada</span>
             </p>
-            <a href="#reservation" class="cta-btn">Reserva tu Mesa</a>
+            <a href="#productos" class="cta-btn">Ver Productos</a>
         </div>
-    </section>
+    </header>
 
-    <!-- pal Menu div y en la lista ul -->
-    <section id="menu">
-        <h2>Nuestro Menú Insignia</h2>
+    <!-- Productos -->
+    <section id="productos">
+        <h2>Nuestros Productos Ecológicos</h2>
+
         <div class="menu-grid">
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=400&h=200&fit=crop&crop=center" alt="Truffle Risotto" class="menu-item-image">
+
+            <!-- No se modifican imágenes -->
+            <div class="menu-item" data-item="1">
+                <img src="img/platillo1.jpg" class="menu-item-image">
                 <div class="menu-item-content">
-                    <h3>Risotto de Trufa</h3>
-                    <p>Arroz arborio cremoso con trufa negra, parmesano y hierbas frescas</p>
-                    <div class="price">$32</div>
-                    <button class="ingredients-btn" onclick="showIngredients('truffle-risotto')">Ver Ingredientes</button>
+                    <h3>Manzanas Orgánicas Premium</h3>
+                    <p>Manzanas rojas cultivadas sin pesticidas, directamente de huertos ecológicos.</p>
+                    <span class="price">S/ 12.00 / kg</span>
+                    <button class="ingredients-btn" data-id="1">Ver detalles</button>
                 </div>
             </div>
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=200&fit=crop&crop=center" alt="Grilled Salmon" class="menu-item-image">
+
+            <div class="menu-item" data-item="2">
+                <img src="img/platillo2.jpg" class="menu-item-image">
                 <div class="menu-item-content">
-                    <h3>Salmón a la Parrilla</h3>
-                    <p>Salmón del Atlántico con salsa de mantequilla y limón y vegetales de temporada</p>
-                    <div class="price">$28</div>
-                    <button class="ingredients-btn" onclick="showIngredients('grilled-salmon')">Ver Ingredientes</button>
+                    <h3>Miel Natural de Abeja</h3>
+                    <p>Miel pura sin procesos industriales, ideal para endulzar de forma saludable.</p>
+                    <span class="price">S/ 18.00</span>
+                    <button class="ingredients-btn" data-id="2">Ver detalles</button>
                 </div>
             </div>
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=200&fit=crop&crop=center" alt="Beef Wellington" class="menu-item-image">
+
+            <div class="menu-item" data-item="3">
+                <img src="img/platillo3.jpg" class="menu-item-image">
                 <div class="menu-item-content">
-                    <h3>Beef Wellington</h3>
-                    <p>Lomo de res premium envuelto en hojaldre con duxelles de champiñones</p>
-                    <div class="price">$45</div>
-                    <button class="ingredients-btn" onclick="showIngredients('beef-wellington')">Ver Ingredientes</button>
+                    <h3>Quinua Orgánica</h3>
+                    <p>Grano andino con alto valor nutricional, perfecto para ensaladas y sopas.</p>
+                    <span class="price">S/ 10.00 / 500g</span>
+                    <button class="ingredients-btn" data-id="3">Ver detalles</button>
                 </div>
             </div>
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=400&h=200&fit=crop&crop=center" alt="Lobster Thermidor" class="menu-item-image">
+
+            <div class="menu-item" data-item="4">
+                <img src="img/platillo4.jpg" class="menu-item-image">
                 <div class="menu-item-content">
-                    <h3>Langosta Thermidor</h3>
-                    <p>Langosta fresca en salsa cremosa de coñac con queso gruyere</p>
-                    <div class="price">$52</div>
-                    <button class="ingredients-btn" onclick="showIngredients('lobster-thermidor')">Ver Ingredientes</button>
+                    <h3>Café Ecológico Molido</h3>
+                    <p>Cosechado en tierras altas, con aroma intenso y proceso artesanal.</p>
+                    <span class="price">S/ 22.00</span>
+                    <button class="ingredients-btn" data-id="4">Ver detalles</button>
                 </div>
             </div>
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=200&fit=crop&crop=center" alt="Duck Confit" class="menu-item-image">
+
+            <div class="menu-item" data-item="5">
+                <img src="img/platillo5.jpg" class="menu-item-image">
                 <div class="menu-item-content">
-                    <h3>Confit de Pato</h3>
-                    <p>Pierna de pato cocida lentamente con papas al ajo y reducción de cereza</p>
-                    <div class="price">$38</div>
-                    <button class="ingredients-btn" onclick="showIngredients('duck-confit')">Ver Ingredientes</button>
+                    <h3>Mix de Verduras Frescas</h3>
+                    <p>Paquete de zanahoria, brócoli, apio y más. Ideal para comidas saludables.</p>
+                    <span class="price">S/ 9.00</span>
+                    <button class="ingredients-btn" data-id="5">Ver detalles</button>
                 </div>
             </div>
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=200&fit=crop&crop=center" alt="Chocolate Soufflé" class="menu-item-image">
+
+            <div class="menu-item" data-item="6">
+                <img src="img/platillo6.jpg" class="menu-item-image">
                 <div class="menu-item-content">
-                    <h3>Soufflé de Chocolate</h3>
-                    <p>Soufflé caliente de chocolate con helado de vainilla y coulis de frutos rojos</p>
-                    <div class="price">$16</div>
-                    <button class="ingredients-btn" onclick="showIngredients('chocolate-souffle')">Ver Ingredientes</button>
+                    <h3>Aceite de Oliva Artesanal</h3>
+                    <p>Prensado en frío, sin refinar y con sabor suave, ideal para ensaladas.</p>
+                    <span class="price">S/ 28.00</span>
+                    <button class="ingredients-btn" data-id="6">Ver detalles</button>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- para reservar en la seccion dev -->
-    <section id="reservation">
+    <!-- Promos -->
+    <section id="promos">
+        <h2>Promociones Especiales</h2>
+        <p style="text-align:center; max-width:700px; margin:auto;">
+            Aprovecha ofertas únicas en combos ecológicos, productos frescos y packs saludables.
+        </p>
+    </section>
+
+    <!-- Pedidos -->
+    <section id="pedido">
+        <h2>Realiza tu Pedido</h2>
+
         <div class="reservation">
             <div class="reservation-left">
-                <h2>Hacer una Reserva</h2>
-                <form class="reservation-form" onsubmit="handleReservation(event)">
+                <h3>Compra Online</h3>
+                <p>Haz tu pedido y recíbelo en casa con delivery ecológico.</p>
+
+                <form class="reservation-form">
                     <div class="form-group">
-                        <label for="name">Nombre Completo</label>
-                        <input type="text" id="name" name="name" required>
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Ingresa tu nombre">
                     </div>
+
                     <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" required>
+                        <label>Teléfono</label>
+                        <input type="text" placeholder="Número de contacto">
                     </div>
-                    <div class="form-group">
-                        <label for="phone">Número de Teléfono</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="date">Fecha</label>
-                        <input type="date" id="date" name="date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="time">Hora</label>
-                        <select id="time" name="time" required>
-                            <option value="">Seleccionar Hora</option>
-                            <option value="17:00">5:00 PM</option>
-                            <option value="17:30">5:30 PM</option>
-                            <option value="18:00">6:00 PM</option>
-                            <option value="18:30">6:30 PM</option>
-                            <option value="19:00">7:00 PM</option>
-                            <option value="19:30">7:30 PM</option>
-                            <option value="20:00">8:00 PM</option>
-                            <option value="20:30">8:30 PM</option>
-                            <option value="21:00">9:00 PM</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="guests">Número de Personas</label>
-                        <select id="guests" name="guests" required>
-                            <option value="">Seleccionar Personas</option>
-                            <option value="1">1 Persona</option>
-                            <option value="2">2 Personas</option>
-                            <option value="3">3 Personas</option>
-                            <option value="4">4 Personas</option>
-                            <option value="5">5 Personas</option>
-                            <option value="6">6 Personas</option>
-                            <option value="7">7 Personas</option>
-                            <option value="8">8 Personas</option>
-                        </select>
-                    </div>
+
                     <div class="form-group full-width">
-                        <label for="special">Peticiones Especiales</label>
-                        <textarea id="special" name="special" rows="5" placeholder="¿Alguna restricción alimentaria o celebración especial?"></textarea>
+                        <label>Producto</label>
+                        <input type="text" placeholder="Producto que deseas">
                     </div>
-                    <button type="submit" class="submit-btn">Reservar Mesa</button>
+
+                    <div class="form-group full-width">
+                        <label>Dirección</label>
+                        <textarea placeholder="Escribe tu dirección"></textarea>
+                    </div>
+
+                    <button class="submit-btn">Hacer Pedido</button>
                 </form>
             </div>
+
             <div class="reservation-right">
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop&crop=center" alt="Restaurant Interior" class="reservation-image">
+                <img src="img/reserva.jpg" class="reservation-image">
             </div>
         </div>
     </section>
 
-    <!-- Footer o el de abajo-->
-    <footer id="contact">
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title">Detalles</h3>
+            <ul id="ingredient-list" class="ingredient-list"></ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Contáctanos</h3>
-                <p>217 Castor Vera Solano<br>
-                Puno - Peru , Codigo Postal 21001<br>
-                Teléfono: + 51 936385646<br>
-                Email: carlositalovilca@gmail.com</p>
+                <h3>EKO MARKET</h3>
+                <p>Alimentos naturales y ecológicos para una vida más saludable.</p>
             </div>
+
             <div class="footer-section">
-                <h3>Horario de Atención</h3>
-                <p>Lunes - Jueves: 5:00 PM - 10:00 PM<br>
-                Viernes - Sábado: 5:00 PM - 11:00 PM<br>
-                Domingo: 5:00 PM - 9:00 PM<br>
-                Cerrado en feriados importantes</p>
+                <h3>Contacto</h3>
+                <p>Correo: contacto@ekomarket.com</p>
+                <p>Tel: 987 654 321</p>
             </div>
+
             <div class="footer-section">
-                <h3>Síguenos</h3>
-                <p><a href="#">Facebook</a><br>
-                <a href="#">Instagram</a><br>
-                <a href="#">Twitter</a><br>
-                <a href="#">LinkedIn</a></p>
-            </div>
-        </div>
-        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #555; text-align: center;">
-            <p>&copy; 2026 Carlos Aurea Dining. Todos los derechos reservados.</p>
-            <div class="footer-links">
-                <a href="#">Política de Privacidad</a>
-                <span>|</span>
-                <a href="#">Términos y Condiciones</a>
-                <span>|</span>
-                <a href="#">Mapa del Sitio</a>
-                <span>|</span>
-                <a rel="nofollow noopener" href="https://fkfkfkkx.github.io/CARLOSVILCAF/" target="_blank">Diseñado por Carlos VF</a>
+                <h3>Enlaces</h3>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a><span>|</span>
+                    <a href="#productos">Productos</a><span>|</span>
+                    <a href="#pedido">Pedidos</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    
-    <div id="ingredientsModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h3 id="modalTitle">Ingredientes del Plato</h3>
-            <ul id="ingredientsList" class="ingredient-list"></ul>
-        </div>
-    </div>
-
-<script src="tooplate-bistro-scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

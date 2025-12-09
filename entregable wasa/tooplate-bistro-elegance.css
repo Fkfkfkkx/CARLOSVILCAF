@@ -292,7 +292,7 @@ nav {
 	}
 }
 
-/* Section Styles */
+/* Seccion de estilos y el background y la seccion y classs*/
 section {
 	padding: 5rem 2rem;
 	max-width: 1200px;
@@ -319,7 +319,7 @@ h2::after {
 	border-radius: 2px;
 }
 
-/* Menu Section */
+/* esto es en menu (ul, li, display) */
 .menu-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -414,7 +414,7 @@ h2::after {
 	color: white;
 }
 
-/* Ingredients Modal */
+/* Ingredientes en el sitio web */
 .modal {
 	display: none;
 	position: fixed;
@@ -490,7 +490,7 @@ h2::after {
 	font-weight: bold;
 }
 
-/* Reservation Section */
+/* para reservar en el sitio web */
 .reservation {
 	background: #f8f9fa;
 	border-radius: 20px;
@@ -585,7 +585,7 @@ h2::after {
 	transform: translateY(-2px);
 }
 
-/* Footer */
+/* Footer en el celular y como se ve en la pc */
 footer {
 	background: #333;
 	color: white;

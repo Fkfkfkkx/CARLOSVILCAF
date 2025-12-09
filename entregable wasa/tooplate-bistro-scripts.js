@@ -55,48 +55,13 @@ function createDiagonalGrid() {
    const grid = document.querySelector('.diagonal-grid');
    if (!grid) return;
 
-   const blocks = [{
-         width: 80,
-         bottom: -400,
-         left: -100,
-         delay: 0,
-         duration: 22
-      },
-      {
-         width: 60,
-         bottom: -300,
-         left: 100,
-         delay: 2,
-         duration: 20
-      },
-      {
-         width: 100,
-         bottom: -370,
-         left: 350,
-         delay: 1,
-         duration: 24
-      },
-      {
-         width: 70,
-         bottom: -230,
-         left: 200,
-         delay: 1.5,
-         duration: 21
-      },
-      {
-         width: 90,
-         bottom: -170,
-         left: 500,
-         delay: 0.5,
-         duration: 23
-      },
-      {
-         width: 50,
-         bottom: -270,
-         left: 400,
-         delay: 3,
-         duration: 25
-      }
+   const blocks = [
+      { width: 80, bottom: -400, left: -100, delay: 0, duration: 22 },
+      { width: 60, bottom: -300, left: 100, delay: 2, duration: 20 },
+      { width: 100, bottom: -370, left: 350, delay: 1, duration: 24 },
+      { width: 70, bottom: -230, left: 200, delay: 1.5, duration: 21 },
+      { width: 90, bottom: -170, left: 500, delay: 0.5, duration: 23 },
+      { width: 50, bottom: -270, left: 400, delay: 3, duration: 25 }
    ];
 
    blocks.forEach(block => {
@@ -116,60 +81,16 @@ function createStaticDecoration() {
    const decoration = document.querySelector('.static-decoration');
    if (!decoration) return;
 
-   const staticBlocks = [{
-         size: 85,
-         top: '20px',
-         right: '30px',
-         outline: true
-      },
-      {
-         size: 120,
-         top: '80px',
-         right: '120px',
-         outline: false
-      },
-      {
-         size: 100,
-         top: '140px',
-         right: '50px',
-         outline: true
-      },
-      {
-         size: 40,
-         top: '50px',
-         right: '180px',
-         outline: true
-      },
-      {
-         size: 95,
-         top: '200px',
-         right: '150px',
-         outline: false
-      },
-      {
-         size: 60,
-         top: '100px',
-         right: '280px',
-         outline: true
-      },
-      {
-         size: 75,
-         top: '180px',
-         right: '220px',
-         outline: true
-      },
-      {
-         size: 50,
-         top: '300px',
-         right: '180px',
-         outline: true
-      },
-      {
-         size: 90,
-         top: '60px',
-         right: '320px',
-         outline: false
-      }
+   const staticBlocks = [
+      { size: 85, top: '20px', right: '30px', outline: true },
+      { size: 120, top: '80px', right: '120px', outline: false },
+      { size: 100, top: '140px', right: '50px', outline: true },
+      { size: 40, top: '50px', right: '180px', outline: true },
+      { size: 95, top: '200px', right: '150px', outline: false },
+      { size: 60, top: '100px', right: '280px', outline: true },
+      { size: 75, top: '180px', right: '220px', outline: true },
+      { size: 50, top: '300px', right: '180px', outline: true },
+      { size: 90, top: '60px', right: '320px', outline: false }
    ];
 
    staticBlocks.forEach(block => {
@@ -188,42 +109,13 @@ function createBottomRightDecoration() {
    const decoration = document.querySelector('.bottom-right-decoration');
    if (!decoration) return;
 
-   const redBlocks = [{
-         size: 65,
-         bottom: '20px',
-         right: '40px',
-         outline: false
-      },
-      {
-         size: 45,
-         bottom: '60px',
-         right: '120px',
-         outline: false
-      },
-      {
-         size: 85,
-         bottom: '120px',
-         right: '60px',
-         outline: false
-      },
-      {
-         size: 35,
-         bottom: '100px',
-         right: '150px',
-         outline: false
-      },
-      {
-         size: 55,
-         bottom: '40px',
-         right: '200px',
-         outline: true
-      },
-      {
-         size: 70,
-         bottom: '160px',
-         right: '140px',
-         outline: true
-      }
+   const redBlocks = [
+      { size: 65, bottom: '20px', right: '40px', outline: false },
+      { size: 45, bottom: '60px', right: '120px', outline: false },
+      { size: 85, bottom: '120px', right: '60px', outline: false },
+      { size: 35, bottom: '100px', right: '150px', outline: false },
+      { size: 55, bottom: '40px', right: '200px', outline: true },
+      { size: 70, bottom: '160px', right: '140px', outline: true }
    ];
 
    redBlocks.forEach(block => {
@@ -238,226 +130,88 @@ function createBottomRightDecoration() {
 }
 
 
+/*  -------------------------
+    PRODUCTOS ORGÁNICOS ECO MARKET
+    (Solo cambié títulos e ingredientes)
+    ------------------------- */
+
 const ingredientsData = {
    'truffle-risotto': {
-      title: 'Risotto de Trufa',
-      ingredients: [{
-            name: 'Arroz Arborio',
-            allergen: false
-         },
-         {
-            name: 'Trufa Negra',
-            allergen: false
-         },
-         {
-            name: 'Queso Parmesano',
-            allergen: true
-         },
-         {
-            name: 'Caldo de Vegetales',
-            allergen: false
-         },
-         {
-            name: 'Vino Blanco',
-            allergen: false
-         },
-         {
-            name: 'Mantequilla',
-            allergen: true
-         },
-         {
-            name: 'Hierbas Frescas',
-            allergen: false
-         },
-         {
-            name: 'Chalotes',
-            allergen: false
-         }
+      title: 'Arroz Integral Orgánico con Trufa',
+      ingredients: [
+         { name: 'Arroz Integral Orgánico', allergen: false },
+         { name: 'Trufa Negra Natural', allergen: false },
+         { name: 'Queso Parmesano Orgánico', allergen: true },
+         { name: 'Caldo Vegetal Orgánico', allergen: false },
+         { name: 'Aceite de Oliva Extra Virgen', allergen: false },
+         { name: 'Mantequilla Orgánica', allergen: true },
+         { name: 'Hierbas Orgánicas', allergen: false },
+         { name: 'Cebolla Blanca Orgánica', allergen: false }
       ]
    },
+
    'grilled-salmon': {
-      title: 'Salmón a la Parrilla',
-      ingredients: [{
-            name: 'Salmón del Atlántico',
-            allergen: true
-         },
-         {
-            name: 'Limón',
-            allergen: false
-         },
-         {
-            name: 'Mantequilla',
-            allergen: true
-         },
-         {
-            name: 'Vegetales de Estación',
-            allergen: false
-         },
-         {
-            name: 'Aceite de Oliva',
-            allergen: false
-         },
-         {
-            name: 'Eneldo Fresco',
-            allergen: false
-         },
-         {
-            name: 'Sal Marina',
-            allergen: false
-         },
-         {
-            name: 'Pimienta Negra',
-            allergen: false
-         }
+      title: 'Salmón Orgánico con Vegetales',
+      ingredients: [
+         { name: 'Salmón de Cultivo Responsable', allergen: true },
+         { name: 'Limón Orgánico', allergen: false },
+         { name: 'Aceite de Oliva Orgánico', allergen: false },
+         { name: 'Vegetales Orgánicos', allergen: false },
+         { name: 'Eneldo Orgánico', allergen: false },
+         { name: 'Sal Marina Natural', allergen: false },
+         { name: 'Pimienta Negra Orgánica', allergen: false }
       ]
    },
+
    'beef-wellington': {
-      title: 'Beef Wellington',
-      ingredients: [{
-            name: 'Lomo de Res',
-            allergen: false
-         },
-         {
-            name: 'Hojaldre',
-            allergen: true
-         },
-         {
-            name: 'Duxelles de Champiñones',
-            allergen: false
-         },
-         {
-            name: 'Prosciutto',
-            allergen: false
-         },
-         {
-            name: 'Huevo Batido',
-            allergen: true
-         },
-         {
-            name: 'Tomillo Fresco',
-            allergen: false
-         },
-         {
-            name: 'Mostaza Dijon',
-            allergen: false
-         },
-         {
-            name: 'Jugo de Vino Tinto',
-            allergen: false
-         }
+      title: 'Pan Integral Relleno de Vegetales Orgánicos',
+      ingredients: [
+         { name: 'Pan Integral Orgánico', allergen: true },
+         { name: 'Champiñones Orgánicos', allergen: false },
+         { name: 'Espinaca Orgánica', allergen: false },
+         { name: 'Zanahoria Orgánica', allergen: false },
+         { name: 'Ajo Orgánico', allergen: false },
+         { name: 'Cebolla Morada Orgánica', allergen: false }
       ]
    },
+
    'lobster-thermidor': {
-      title: 'Langosta Thermidor',
-      ingredients: [{
-            name: 'Langosta Fresca',
-            allergen: true
-         },
-         {
-            name: 'Coñac',
-            allergen: false
-         },
-         {
-            name: 'Crema de Leche',
-            allergen: true
-         },
-         {
-            name: 'Queso Gruyere',
-            allergen: true
-         },
-         {
-            name: 'Mantequilla',
-            allergen: true
-         },
-         {
-            name: 'Yemas de Huevo',
-            allergen: true
-         },
-         {
-            name: 'Estragón Fresco',
-            allergen: false
-         },
-         {
-            name: 'Pimienta Blanca',
-            allergen: false
-         }
+      title: 'Ensalada Orgánica Premium',
+      ingredients: [
+         { name: 'Mix de Hojas Verdes Orgánicas', allergen: false },
+         { name: 'Tomates Cherry Orgánicos', allergen: false },
+         { name: 'Queso Vegano Orgánico', allergen: false },
+         { name: 'Vinagre de Manzana Orgánico', allergen: false },
+         { name: 'Pepino Orgánico', allergen: false },
+         { name: 'Zanahoria Rallada Orgánica', allergen: false }
       ]
    },
+
    'duck-confit': {
-      title: 'Confit de Pato',
-      ingredients: [{
-            name: 'Pierna de Pato',
-            allergen: false
-         },
-         {
-            name: 'Grasa de Pato',
-            allergen: false
-         },
-         {
-            name: 'Papas al Ajo',
-            allergen: false
-         },
-         {
-            name: 'Cerezas Frescas',
-            allergen: false
-         },
-         {
-            name: 'Vinagre de Vino Tinto',
-            allergen: false
-         },
-         {
-            name: 'Tomillo Fresco',
-            allergen: false
-         },
-         {
-            name: 'Hojas de Laurel',
-            allergen: false
-         },
-         {
-            name: 'Sal Gruesa',
-            allergen: false
-         }
+      title: 'Pollo de Granja Orgánica al Horno',
+      ingredients: [
+         { name: 'Pollo Orgánico', allergen: false },
+         { name: 'Papas Orgánicas', allergen: false },
+         { name: 'Romero Orgánico', allergen: false },
+         { name: 'Ajo Orgánico', allergen: false },
+         { name: 'Aceite de Oliva Orgánico', allergen: false }
       ]
    },
+
    'chocolate-souffle': {
-      title: 'Soufflé de Chocolate',
-      ingredients: [{
-            name: 'Chocolate Oscuro',
-            allergen: false
-         },
-         {
-            name: 'Huevos',
-            allergen: true
-         },
-         {
-            name: 'Azúcar',
-            allergen: false
-         },
-         {
-            name: 'Mantequilla',
-            allergen: true
-         },
-         {
-            name: 'Helado de Vainilla',
-            allergen: true
-         },
-         {
-            name: 'Frutas del Bosque',
-            allergen: false
-         },
-         {
-            name: 'Crema de Leche',
-            allergen: true
-         },
-         {
-            name: 'Extracto de Vainilla',
-            allergen: false
-         }
+      title: 'Brownie Orgánico de Cacao Puro',
+      ingredients: [
+         { name: 'Cacao Orgánico 70%', allergen: false },
+         { name: 'Harina Integral Orgánica', allergen: true },
+         { name: 'Azúcar de Coco Orgánica', allergen: false },
+         { name: 'Huevos de Gallina de Granja', allergen: true },
+         { name: 'Mantequilla Orgánica', allergen: true },
+         { name: 'Frutas Orgánicas', allergen: false }
       ]
    }
 };
 
-
+/* Modal */
 function showIngredients(dishId) {
    const modal = document.getElementById('ingredientsModal');
    const title = document.getElementById('modalTitle');
@@ -471,9 +225,9 @@ function showIngredients(dishId) {
       dish.ingredients.forEach(ingredient => {
          const li = document.createElement('li');
          li.innerHTML = `
-                        <span>${ingredient.name}</span>
-                        ${ingredient.allergen ? '<span class="allergen">Alérgeno</span>' : ''}
-                    `;
+            <span>${ingredient.name}</span>
+            ${ingredient.allergen ? '<span class="allergen">Alérgeno</span>' : ''}
+         `;
          list.appendChild(li);
       });
 
@@ -509,7 +263,7 @@ function handleReservation(e) {
       special: formData.get('special')
    };
 
-   alert(`¡Gracias, ${reservation.name}! Tu reserva para ${reservation.guests} personas el ${reservation.date} a las ${reservation.time} ha sido confirmada. Te enviaremos un correo de confirmación a ${reservation.email}.`);
+   alert(`¡Gracias, ${reservation.name}! Tu reserva para ${reservation.guests} productos el ${reservation.date} a las ${reservation.time} ha sido registrada. Te enviaremos un correo a ${reservation.email}.`);
 
    e.target.reset();
 }

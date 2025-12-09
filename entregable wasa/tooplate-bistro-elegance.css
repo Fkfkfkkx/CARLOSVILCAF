@@ -490,7 +490,8 @@ h2::after {
 	font-weight: bold;
 }
 
-/* para reservar en el sitio web */
+		/* para reservar en el sitio web */
+		/*para mejorar se debe de agregar mas styles*/
 .reservation {
 	background: #f8f9fa;
 	border-radius: 20px;
@@ -585,7 +586,8 @@ h2::after {
 	transform: translateY(-2px);
 }
 
-/* Footer en el celular y como se ve en la pc */
+/* Footer y como se ve desde pc */
+/* en la parte de abajo */
 footer {
 	background: #333;
 	color: white;
@@ -641,7 +643,7 @@ footer {
 	color: #555;
 }
 
-/* como se ve en el celar*/
+/*como se ve el celular y en pc*/
 @media (max-width: 768px) {
 	.nav-links {
 		position: fixed;
